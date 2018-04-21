@@ -2,9 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
-
 use App\User;
-use App\Notifications\VerifyEmail;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -68,16 +66,13 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         $uuid = Uuid::generate()->string;
-        $user = User::create([
+        return User::create([
             'id' => $uuid,
             'name' => $data['name'],
             'address' => $data['address'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
-        
-        $user->notify(new VerifyEmail($user));
-        return $user;   
     }
 
 }
