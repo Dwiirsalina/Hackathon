@@ -8,7 +8,7 @@ Login
 <div class="banner-top">
 	<div class="container">
 		<h3 >Login</h3>
-		<h4><a href="index.html">Home</a><label>/</label>Login</h4>
+		<h4><a href="{{ url('/') }}">Home</a><label>/</label>Login</h4>
 		<div class="clearfix"> </div>
 	</div>
 </div>
