@@ -15,19 +15,24 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/details', function () {
-    return view('details');
-});
+Auth::routes();
 
-Route::get('/login', function () {
-    return view('login');
-});
+Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/register', function () {
-    return view('register');
-});
+// Route::get('/verify/{id}','VerifyController@verify')->name('verify');
 
-Route::get('/profile', function () {
-    return view('profile');
-});
+// Route::get('/details', function () {
+//     return view('details');
+// });
 
+// Route::get('/login', function () {
+//     return view('login');
+// });
+
+// Route::get('/register', function () {
+//     return view('register');
+// });
+
+// Route::get('/profile', function () {
+//     return view('profile');
+// });

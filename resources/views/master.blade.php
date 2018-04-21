@@ -9,6 +9,7 @@
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <!-- js -->
    <script src="js/jquery-1.11.1.min.js"></script>
+   <script src="js/bootstrap.js"></script>
 <!-- //js -->
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
