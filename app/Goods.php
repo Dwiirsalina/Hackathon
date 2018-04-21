@@ -4,11 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Video extends Model
+class Goods extends Model
 {
-    protected $table = 'videos';
+    protected $table = 'goods';
     public $incrementing = false;
     protected $filltable = [
-    	'id','file','url','users_id','descriptions'
+    	'id','name','details','price','videos_id'
     ];
 }
