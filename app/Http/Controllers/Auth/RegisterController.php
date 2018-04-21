@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers\Auth;
 
+
 use App\User;
+use App\Notifications\VerifyEmail;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Uuid;
 
 class RegisterController extends Controller
 {
@@ -49,9 +52,10 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6|confirmed',
+            'name' => 'required|string|max:45',
+            'address' => 'required|string|max:250',
+            'email' => 'required|string|email|max:45|unique:users',
+            'password' => 'required|string|min:8|confirmed',
         ]);
     }
 
@@ -63,10 +67,17 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $uuid = Uuid::generate()->string;
+        $user = User::create([
+            'id' => $uuid,
             'name' => $data['name'],
+            'address' => $data['address'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+        
+        $user->notify(new VerifyEmail($user));
+        return $user;   
     }
+
 }
