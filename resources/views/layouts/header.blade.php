@@ -3,7 +3,7 @@
 		<div class="container">
 			
 			<div class="logo">
-				<h1 ><a href="index.html">Camping.in Aja<span>Vacation Solution</span></a></h1>
+				<h1 ><a href="{{ url('/') }}">Do It Yourself</span></a></h1>
 			</div>
 			<div class="head-t">
 				<ul class="card">
