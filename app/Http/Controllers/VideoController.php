@@ -31,14 +31,21 @@ class VideoController extends Controller
         $idvideo = Uuid::generate();
         $title = $request->input('title');
     	$descriptions = $request->input('descriptions');
-        $url = $request->input('url');
         $user = Auth::user()->id;
 
-        parse_str(parse_url( $url, PHP_URL_QUERY ), $vars );
-        $url = $vars['v'];
+        //proses file
+        if($request->hasFile('file')){ // kalau ada file yang di upload
+            $filename = $request->input('$idvideo') .".". $request->file('file')->extension(); //ubah nama file;
+            $request->file('file')->storeAs('uploads',$filename); //save file
+            $imgUrl = $filename;
+            $imgPath=$imgUrl;
+        }
+        else{
+            redirect('/');
+        }
 
         DB::table('videos')->insert(
-            ['id' => $idvideo, 'file' => $title, 'url' => $url,'descriptions' => $descriptions, 'users_id' => $user]
+            ['id' => $idvideo, 'file' => $imgPath, 'url' => $title,'descriptions' => $descriptions, 'users_id' => $user]
         );
 
         //Pengolahan Goods
@@ -63,12 +70,19 @@ class VideoController extends Controller
     	$descriptions = $request->input('descriptions');
         $url = $request->input('url');
 
-        parse_str(parse_url( $url, PHP_URL_QUERY ), $vars );
-        $url = $vars['v'];
+        if($request->hasFile('file')){ // kalau ada file yang di upload
+            $filename = $request->input('$idvideo') .".". $request->file('file')->extension(); //ubah nama file;
+            $request->file('file')->storeAs('uploads',$filename); //save file
+            $imgUrl = $filename;
+            $imgPath=$imgUrl;
+        }
+        else{
+            redirect('/');
+        }
         
         DB::table('videos')
             ->where('id', $data->id)
-            ->update(['file' => $title, 'url' => $url,'descriptions' => $descriptions]);
+            ->update(['file' => $imgUrl, 'url' => $title,'descriptions' => $descriptions]);
 
         //Update Goods
         $name = $request->input('name');
