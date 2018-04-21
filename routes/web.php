@@ -15,27 +15,24 @@ Route::get('/', function () {
     return view('index');
 });
 
-<<<<<<< HEAD
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/verify/{id}','VerifyController@verify')->name('verify');
-=======
-Route::get('/details', function () {
-    return view('details');
-});
+// Route::get('/verify/{id}','VerifyController@verify')->name('verify');
 
-Route::get('/login', function () {
-    return view('login');
-});
+// Route::get('/details', function () {
+//     return view('details');
+// });
 
-Route::get('/register', function () {
-    return view('register');
-});
+// Route::get('/login', function () {
+//     return view('login');
+// });
 
-Route::get('/profile', function () {
-    return view('profile');
-});
+// Route::get('/register', function () {
+//     return view('register');
+// });
 
->>>>>>> 23e812b607c6260dfa1b8410b4ae5247e174dcc2
+// Route::get('/profile', function () {
+//     return view('profile');
+// });
