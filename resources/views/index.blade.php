@@ -15,7 +15,7 @@
 <div class="background-search">
     <div class="container search-container">
 		<div class="banner-info">
-			<h3>Lagi gabut? <br>Coba cari "Belajar memasak Rendang" aja</h3>	
+			<h3>Lagi gabut? <br>Coba cari "Belajar memasak Rendang"</h3>	
 			<div class="search-form" style="opacity: 1; z-index: 1000">
 				<form action="#" method="post">
 					<input type="text" placeholder="Search..." name="Search...">
