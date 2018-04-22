@@ -4,16 +4,16 @@
 <title>AJK | @yield('title') </title>
 <!-- for-mobile-apps -->
 <!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="/css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="/css/style.css" rel='stylesheet' type='text/css' />
 <!-- js -->
-   <script src="js/jquery-1.11.1.min.js"></script>
-   <script src="js/bootstrap.js"></script>
+   <script src="/js/jquery-1.11.1.min.js"></script>
+   <script src="/js/bootstrap.js"></script>
 <!-- //js -->
 <!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="/js/move-top.js"></script>
+<script type="text/javascript" src="/js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -23,14 +23,14 @@
 	});
 </script>
 <!-- start-smoth-scrolling -->
-<link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="/css/font-awesome.css" rel="stylesheet"> 
 <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
 
 @yield('moreCss')
 <!--- start-rate---->
-<script src="js/jstarbox.js"></script>
-	<link rel="stylesheet" href="css/jstarbox.css" type="text/css" media="screen" charset="utf-8" />
+<script src="/js/jstarbox.js"></script>
+	<link rel="stylesheet" href="/css/jstarbox.css" type="text/css" media="screen" charset="utf-8" />
 		<script type="text/javascript">
 			jQuery(function() {
 			jQuery('.starbox').each(function() {

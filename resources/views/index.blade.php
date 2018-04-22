@@ -54,10 +54,10 @@
 			<div class="col-md-4">
 				<div class="card" style="padding: 10px">
 					<div class="card-body text-center">
-						<iframe  src="https://www.youtube.com/embed/HCAPjIVOdJw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						<iframe  src="https://www.youtube.com/embed/TeoS_fQWvkY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
 					<div class="card-header text-center" style="padding: 20px">
-					<h4 href="{{url('details/1')}}">Belajar Membuat Pizza</h4>
+					<h4><a href="{{url('details/1')}}">Membuat Kue</a></h4>
 					</div>
 				</div>
 			</div>

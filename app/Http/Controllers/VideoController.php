@@ -26,6 +26,10 @@ class VideoController extends Controller
         return view('playvideo', ['data' => $data]);
     }
 
+    public function details(){
+        return view('details');
+    }
+
     public function createVideo(Request $request){
         //Pengolahan Video
         $idvideo = Uuid::generate();

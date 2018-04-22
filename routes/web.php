@@ -27,3 +27,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/channel', function () {
     return view('profile');
 });
+
+Route::get('/details/1', 'VideoController@details');
