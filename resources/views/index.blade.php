@@ -76,10 +76,10 @@
 			<div class="col-md-4">
 				<div class="card" style="padding: 10px">
 					<div class="card-body text-center">
-						<iframe allowfullscreen frameborder="0" src="https://www.youtube.com/embed/dkxgy8CT_5A" allow="autoplay; encrypted-media"></iframe>
+						<iframe allowfullscreen frameborder="0" src="https://www.youtube.com/embed/zyLZ78NsppE" allow="autoplay; encrypted-media"></iframe>
 					</div>
 					<div class="card-header text-center" style="padding: 20px">
-					<h4><a href="{{url('details/1')}}">Fluffy Omelet</a></h4>
+					<h4><a href="{{url('details/1')}}">Cute Bracelet</a></h4>
 					</div>
 					
 				</div>

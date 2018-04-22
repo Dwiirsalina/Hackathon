@@ -1,7 +1,7 @@
 @extends('master')
 
-@section('title]')
-Details
+@section('title')
+Details Jiggly Fluffy Japanese Cheesecake
 @endsection
 @section('content')
 
@@ -35,9 +35,6 @@ Details
 			<div class="single-right">
 				<h3>Jiggly Fluffy Japanese Cheesecake</h3>
 
-				<div class="pr-single" style="padding-bottom: 0;">
-					<p class="reduced" ><del>$10.00</del>$5.00</p>
-				</div>
 
 				<p class="in-pa" style="margin:0;"> 
 					Here is what you'll need!
@@ -47,22 +44,36 @@ Details
 					Servings: 6-8
 				<br>
 				<br>
-					<h3>INGREDIENTS</h3>
 				<br>
 				<br>
-					<ul>
-					<li>⅔ cup (130 milliliters) milk</li>
-					<li>4 ounces (100 grams) cream cheese</li>
-					<li>7 tablespoons (100 grams ) butter</li>
-					<li>8 egg yolks</li>
-					<li>½ cup (60 grams) flour</li>
-					<li>½ cup (60 grams) cornstarch</li>
-					<li>13 large egg whites</li>
-					<li>⅔ cup (130 grams) granulated sugar</li>
-					<li>Parchment paper</li>
-					<li>Strawberries, to serve</li>
-					<li>Powdered sugar, to serve</li>
-					</ul>
+					<div class="row">
+						<div class="col-md-6">
+							<h3>Ingredients</h3>
+							<ul>
+								<li>⅔ cup (130 milliliters) milk</li>
+								<li>4 ounces (100 grams) cream cheese</li>
+								<li>7 tablespoons (100 grams ) butter</li>
+								<li>8 egg yolks</li>
+								<li>½ cup (60 grams) flour</li>
+								<li>½ cup (60 grams) cornstarch</li>
+								<li>13 large egg whites</li>
+								<li>⅔ cup (130 grams) granulated sugar</li>
+								<li>Parchment paper</li>
+								<li>Strawberries, to serve</li>
+								<li>Powdered sugar, to serve</li>
+							</ul>
+						</div>
+						<div class="col-md-6 text-center">
+							<h3>Buy Ingredients with us</h3>
+							<br>
+							<b><span>Only $15</span></b>
+							<br>
+							<br>
+							<button class="btn btn-success btn-lg">
+								<i class="fa fa-cart">Add to Cart</i>
+							</button>
+						</div>
+					</div>
 				<br>
 				<br>
 					<h3> PREPARATION </h3>
@@ -82,11 +93,6 @@ Details
 					Sprinkle the top of the cake with powdered sugar, slice, and serve with strawberries while still warm!
 					Enjoy!</p> 
 				</p>
-
-				<div class="add add-3">
-				<button class="btn btn-danger my-cart-btn my-cart-b" data-id="1" data-name="Wheat" data-summary="summary 1" data-price="6.00" data-quantity="1" data-image="images/si.jpg"><a href="{{url('transactions/1')}}">Add to Cart</a></button>
-				</div>
-
 
 				<div class="clearfix"> </div>
 				<br>
