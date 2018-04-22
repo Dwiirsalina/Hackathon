@@ -47,23 +47,27 @@ Details
 					Servings: 6-8
 				<br>
 				<br>
-					INGREDIENTS
+					<h3>INGREDIENTS</h3>
 				<br>
 				<br>
-					⅔ cup (130 milliliters) milk
-					4 ounces (100 grams) cream cheese
-					7 tablespoons (100 grams ) butter
-					8 egg yolks
-					½ cup (60 grams) flour
-					½ cup (60 grams) cornstarch
-					13 large egg whites
-					⅔ cup (130 grams) granulated sugar
-					Parchment paper
-					Strawberries, to serve
-					Powdered sugar, to serve
+					<ul>
+					<li>⅔ cup (130 milliliters) milk</li>
+					<li>4 ounces (100 grams) cream cheese</li>
+					<li>7 tablespoons (100 grams ) butter</li>
+					<li>8 egg yolks</li>
+					<li>½ cup (60 grams) flour</li>
+					<li>½ cup (60 grams) cornstarch</li>
+					<li>13 large egg whites</li>
+					<li>⅔ cup (130 grams) granulated sugar</li>
+					<li>Parchment paper</li>
+					<li>Strawberries, to serve</li>
+					<li>Powdered sugar, to serve</li>
+					</ul>
 				<br>
-					PREPARATION
-					Preheat oven to 320°F/160°C.
+				<br>
+					<h3> PREPARATION </h3>
+				<br>
+					<p>Preheat oven to 320°F/160°C.
 					In a small pot over medium heat, whisk the milk, cream cheese, and butter until smooth. Remove from heat and cool.
 					In a large bowl, whisk the egg yolks until smooth, then slowly drizzle in the cream mixture, stirring until evenly combined.
 					Sift in the flour and the cornstarch, whisking to make sure there are no lumps.
@@ -76,11 +80,11 @@ Details
 					Bake for 25 minutes, then reduce the heat to 280°F/135°C, and bake for another 55 minutes, until the cake has risen to almost double its height.
 					Remove from oven, and carefully, invert the cake onto your dominant hand and peel off the paper. Be extremely careful, the cake will be hot. You can also invert the cake onto a plate, but this will cause the cake to deflate more. 
 					Sprinkle the top of the cake with powdered sugar, slice, and serve with strawberries while still warm!
-					Enjoy! 
+					Enjoy!</p> 
 				</p>
 
 				<div class="add add-3">
-					<button class="btn btn-danger my-cart-btn my-cart-b" data-id="1" data-name="Wheat" data-summary="summary 1" data-price="6.00" data-quantity="1" data-image="images/si.jpg">Add to Cart</button>
+				<button class="btn btn-danger my-cart-btn my-cart-b" data-id="1" data-name="Wheat" data-summary="summary 1" data-price="6.00" data-quantity="1" data-image="images/si.jpg"><a href="{{url('transactions/1')}}">Add to Cart</a></button>
 				</div>
 
 

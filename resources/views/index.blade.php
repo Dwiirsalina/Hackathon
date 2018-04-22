@@ -57,8 +57,31 @@
 						<iframe  src="https://www.youtube.com/embed/TeoS_fQWvkY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
 					<div class="card-header text-center" style="padding: 20px">
-					<h4><a href="{{url('details/1')}}">Membuat Kue</a></h4>
+					<h4><a href="{{url('details/1')}}">Jiggly Fluffy Cheesecake</a></h4>
 					</div>
+					
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card" style="padding: 10px">
+					<div class="card-body text-center">
+						<iframe allowfullscreen frameborder="0" src="https://www.youtube.com/embed/sxfHm8Dygyc" allow="autoplay; encrypted-media"></iframe>
+					</div>
+					<div class="card-header text-center" style="padding: 20px">
+					<h4><a href="{{url('details/1')}}">Mac n Cheese</a></h4>
+					</div>
+					
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card" style="padding: 10px">
+					<div class="card-body text-center">
+						<iframe allowfullscreen frameborder="0" src="https://www.youtube.com/embed/dkxgy8CT_5A" allow="autoplay; encrypted-media"></iframe>
+					</div>
+					<div class="card-header text-center" style="padding: 20px">
+					<h4><a href="{{url('details/1')}}">Fluffy Omelet</a></h4>
+					</div>
+					
 				</div>
 			</div>
 		</div>
