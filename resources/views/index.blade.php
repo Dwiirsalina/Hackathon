@@ -57,7 +57,7 @@
 						<iframe  src="https://www.youtube.com/embed/HCAPjIVOdJw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 					</div>
 					<div class="card-header text-center" style="padding: 20px">
-						<h4>Belajar Membuat Pizza</h4>
+					<h4 href="{{url('details/1')}}">Belajar Membuat Pizza</h4>
 					</div>
 				</div>
 			</div>
