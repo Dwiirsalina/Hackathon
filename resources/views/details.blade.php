@@ -7,7 +7,7 @@ Details Jiggly Fluffy Japanese Cheesecake
 
 <br>
 <div class="spec ">
-	<h3>Short Codes</h3>
+	<h3> <i class="text-info fa fa-check-circle"></i> Gordon Penyok Official</h3>
 	<div class="ser-t">
 		<b></b>
 		<span><i></i></span>
