@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\video;
-use App\goods;
+use App\Video;
+use App\Goods;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Webpatser\Uuid\Uuid;
@@ -13,11 +13,11 @@ class VideoController extends Controller
 {
     // ALL VIEW
     public function viewCreate(){
-        return view('createvideo');
+        return view('video.createvideo');
     }
 
     public function viewUpdate(){
-        return view('updatevideo');
+        return view('video.viewupdate');
     }
 
     public function viewPlay($idvideo){
@@ -30,22 +30,25 @@ class VideoController extends Controller
         //Pengolahan Video
         $idvideo = Uuid::generate();
         $title = $request->input('title');
-    	$descriptions = $request->input('descriptions');
+        $descriptions = $request->input('descriptions');
+        $url = $request->input('url');
         $user = Auth::user()->id;
+        //$user = "123";
 
-        //proses file
-        if($request->hasFile('file')){ // kalau ada file yang di upload
-            $filename = $request->input('$idvideo') .".". $request->file('file')->extension(); //ubah nama file;
-            $request->file('file')->storeAs('uploads',$filename); //save file
-            $imgUrl = $filename;
-            $imgPath=$imgUrl;
-        }
-        else{
-            redirect('/');
-        }
+        // //proses file
+        // if($request->hasFile('file')){ // kalau ada file yang di upload
+        //     $filename = $request->input('$idvideo') .".". $request->file('file')->extension(); //ubah nama file;
+        //     $request->file('file')->storeAs('uploads',$filename); //save file
+        //     $imgUrl = $filename;
+        //     $imgPath=$imgUrl;
+        // }
+        // else{
+        //     redirect('/');
+        // }
+        // $url = imgPath;
 
         DB::table('videos')->insert(
-            ['id' => $idvideo, 'file' => $imgPath, 'url' => $title,'descriptions' => $descriptions, 'users_id' => $user]
+            ['id' => $idvideo, 'file' => $url, 'url' => $title,'descriptions' => $descriptions, 'users_id' => $user]
         );
 
         //Pengolahan Goods
@@ -63,26 +66,27 @@ class VideoController extends Controller
         return redirect('/');
     }
 
-    public function updatevideo(Request $request, $id){
+    public function updateVideo(Request $request, $id){
         //Update Video
         $data = video::find($id);
         $title = $request->input('title');
     	$descriptions = $request->input('descriptions');
         $url = $request->input('url');
 
-        if($request->hasFile('file')){ // kalau ada file yang di upload
-            $filename = $request->input('$idvideo') .".". $request->file('file')->extension(); //ubah nama file;
-            $request->file('file')->storeAs('uploads',$filename); //save file
-            $imgUrl = $filename;
-            $imgPath=$imgUrl;
-        }
-        else{
-            redirect('/');
-        }
+        // if($request->hasFile('file')){ // kalau ada file yang di upload
+        //     $filename = $request->input('$idvideo') .".". $request->file('file')->extension(); //ubah nama file;
+        //     $request->file('file')->storeAs('uploads',$filename); //save file
+        //     $imgUrl = $filename;
+        //     $imgPath=$imgUrl;
+        // }
+        // else{
+        //     redirect('/');
+        // }
+        // $url = imgPath;
         
         DB::table('videos')
             ->where('id', $data->id)
-            ->update(['file' => $imgUrl, 'url' => $title,'descriptions' => $descriptions]);
+            ->update(['file' => $url, 'url' => $title,'descriptions' => $descriptions]);
 
         //Update Goods
         $name = $request->input('name');
